@@ -185,174 +185,174 @@ if jpg:
         st.write("Prediction accuracy rate below 65%")
         st.write('Undetectable album image.')
 
-    if np.argmax(result) == 0:
+    elif np.argmax(result) == 0:
         st.write("Album name: Anri (2) - Bi・Ki・Ni")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 1:
+    elif np.argmax(result) == 1:
         st.write("Album name: Anri (2) - Coool")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 2:
+    elif np.argmax(result) == 2:
         st.write("Album name: Anri (2) - Timely!!")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 3:
+    elif np.argmax(result) == 3:
         st.write("Album name: Anri (2) - Wave")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 4:
+    elif np.argmax(result) == 4:
         st.write("Album name: Hiroshi Sato - Aqua")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 5:
+    elif np.argmax(result) == 5:
         st.write("Album name: Hiroshi Sato - Awakening")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 6:
+    elif np.argmax(result) == 6:
         st.write("Album name: Hiroshi Sato - Future jpg.name")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 7:
+    elif np.argmax(result) == 7:
         st.write("Album name: Hiroshi Sato - Sound Of Science")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 8:
+    elif np.argmax(result) == 8:
         st.write("Album name: Mariya Takeuchi - Beginning")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 9:
+    elif np.argmax(result) == 9:
         st.write("Album name: Mariya Takeuchi - Love Songs")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 10:
+    elif np.argmax(result) == 10:
         st.write("Album name: Mariya Takeuchi - Miss M")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 11:
+    elif np.argmax(result) == 11:
         st.write("Album name: Mariya Takeuchi - Request")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 12:
+    elif np.argmax(result) == 12:
         st.write("Album name: Mariya Takeuchi - Trad = トラッド")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 13:
+    elif np.argmax(result) == 13:
         st.write("Album name: Mariya Takeuchi - University Street")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 14:
+    elif np.argmax(result) == 14:
         st.write("Album name: Mariya Takeuchi - Variety")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 15:
+    elif np.argmax(result) == 15:
         st.write("Album name: Momoko Kikuchi - Adventure")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 16:
+    elif np.argmax(result) == 16:
         st.write("Album name: Momoko Kikuchi - Escape From Dimension")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 17:
+    elif np.argmax(result) == 17:
         st.write("Album name: Momoko Kikuchi - Ocean Side")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 18:
+    elif np.argmax(result) == 18:
         st.write("Album name: Momoko Kikuchi - Tropic Of Capricorn =トロピック・オブ・カプリコーン 南回帰線")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 19:
+    elif np.argmax(result) == 19:
         st.write("Album name: Taeko Ohnuki - Aventure")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 20:
+    elif np.argmax(result) == 20:
         st.write("Album name: Taeko Ohnuki - Cliché")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 21:
+    elif np.argmax(result) == 21:
         st.write("Album name: Taeko Ohnuki - Grey Skies")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 22:
+    elif np.argmax(result) == 22:
         st.write("Album name: Taeko Ohnuki - Mignonne")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 23:
+    elif np.argmax(result) == 23:
         st.write("Album name: Taeko Ohnuki - Romantique")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 24:
+    elif np.argmax(result) == 24:
         st.write("Album name: Taeko Ohnuki - Sunshower")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 25:
+    elif np.argmax(result) == 25:
         st.write("Album name: Tatsuro Yamashita - Big Wave = ビッグウェイブ")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 26:
+    elif np.argmax(result) == 26:
         st.write("Album name: Tatsuro Yamashita - Circus Town")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 27:
+    elif np.argmax(result) == 27:
         st.write("Album name: Tatsuro Yamashita - For You")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 28:
+    elif np.argmax(result) == 28:
         st.write("Album name: Tatsuro Yamashita - Go Ahead!")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 29:
+    elif np.argmax(result) == 29:
         st.write("Album name: Tatsuro Yamashita - Greatest Hits! Of")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 30:
+    elif np.argmax(result) == 30:
         st.write("Album name: Tatsuro Yamashita - It's A Poppin' Time")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 31:
+    elif np.argmax(result) == 31:
         st.write("Album name: Tatsuro Yamashita - Melodies")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 32:
+    elif np.argmax(result) == 32:
         st.write("Album name: Tatsuro Yamashita - Moonglow")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 33:
+    elif np.argmax(result) == 33:
         st.write("Album name: Tatsuro Yamashita - On The Street Corner")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 34:
+    elif np.argmax(result) == 34:
         st.write("Album name: Tatsuro Yamashita - On The Street Corner 2")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 35:
+    elif np.argmax(result) == 35:
         st.write("Album name: Tatsuro Yamashita - Ray Of Hope")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 36:
+    elif np.argmax(result) == 36:
         st.write("Album name: Tatsuro Yamashita - Ride On Time")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 37:
+    elif np.argmax(result) == 37:
         st.write("Album name: Tatsuro Yamashita - Softly")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 38:
+    elif np.argmax(result) == 38:
         st.write("Album name: Tatsuro Yamashita - Spacy")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 39:
+    elif np.argmax(result) == 39:
         st.write("Album name: Utada Hikaru - Badモード")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 40:
+    elif np.argmax(result) == 40:
         st.write("Album name: Utada Hikaru - Deep River")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 41:
+    elif np.argmax(result) == 41:
         st.write("Album name: Utada Hikaru - First Love")
         st.write("Accuracy: " + str(model_result) + "%")
 
-    if np.argmax(result) == 42:
+    elif np.argmax(result) == 42:
         st.write("Album name: 東北新幹線 - Thru Traffic")
         st.write("Accuracy: " + str(model_result) + "%")
