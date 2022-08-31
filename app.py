@@ -4,24 +4,10 @@ from os import listdir
 from itertools import cycle
 import streamlit as st
 import numpy as np
-import tensorflow
-import skimage
 from PIL import Image
 from skimage import transform
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow import keras
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras import Sequential, layers
-from tensorflow.keras import optimizers
-from tensorflow.keras.layers import Conv2D, MaxPooling2D
-from tensorflow.keras.layers import Activation, Dropout, Flatten, Dense
-from tensorflow.keras.layers.experimental.preprocessing import Rescaling
-from tensorflow.keras import backend as K
-import matplotlib.pyplot as plt
-from matplotlib import pyplot
-from numpy import expand_dims
-from tensorflow.keras.preprocessing.image import load_img
 
 
 st.set_page_config(page_title="CNN to classify album image")
