@@ -31,51 +31,6 @@ st.write(
     [GitHub](https://github.com/nihonlanguageprocessing/vynil_id)"
 )
 
-st.subheader('The list of predictable album cover')
-st.write('1. Anri (2) - Bi・Ki・Ni')
-st.write('2. Anri (2) - Coool')
-st.write('3. Anri (2) - Timely!!')
-st.write('4. Anri (2) - Wave')
-st.write('5. Hiroshi Sato - Aqua')
-st.write('6. Hiroshi Sato - Awakening')
-st.write('7. Hiroshi Sato - Future File')
-st.write('8. Hiroshi Sato - Sound Of Science')
-st.write('9. Mariya Takeuchi - Beginning')
-st.write('10. Mariya Takeuchi - Love Songs')
-st.write('11. Mariya Takeuchi - Miss M')
-st.write('12. Mariya Takeuchi - Request')
-st.write('13. Mariya Takeuchi - Trad = トラッド')
-st.write('14. Mariya Takeuchi - University Street')
-st.write('15. Mariya Takeuchi - Variety')
-st.write('16. Momoko Kikuchi - Adventure')
-st.write('17. Momoko Kikuchi - Escape From Dimension')
-st.write('18. Momoko Kikuchi - Ocean Side')
-st.write('19. Momoko Kikuchi - Tropic Of Capricorn =トロピック・オブ・カプリコーン 南回帰線')
-st.write('20. Taeko Ohnuki - Aventure')
-st.write('21. Taeko Ohnuki - Cliché')
-st.write('22. Taeko Ohnuki - Grey Skies')
-st.write('23. Taeko Ohnuki - Mignonne')
-st.write('24. Taeko Ohnuki - Romantique')
-st.write('25. Taeko Ohnuki - Sunshower')
-st.write('26. Tatsuro Yamashita - Big Wave = ビッグウェイブ')
-st.write('27. Tatsuro Yamashita - Circus Town')
-st.write('28. Tatsuro Yamashita - For You')
-st.write('29. Tatsuro Yamashita - Go Ahead!')
-st.write('30. Tatsuro Yamashita - Greatest Hits! Of')
-st.write("31. Tatsuro Yamashita - It's A Poppin' Time")
-st.write('32. Tatsuro Yamashita - Melodies')
-st.write('33. Tatsuro Yamashita - Moonglow')
-st.write('34. Tatsuro Yamashita - On The Street Corner')
-st.write('35. Tatsuro Yamashita - On The Street Corner 2')
-st.write('36. Tatsuro Yamashita - Ray Of Hope')
-st.write('37. Tatsuro Yamashita - Ride On Time')
-st.write('38. Tatsuro Yamashita - Softly')
-st.write('39. Tatsuro Yamashita - Spacy')
-st.write('40. Utada Hikaru - Badモード')
-st.write('41. Utada Hikaru - Deep River')
-st.write('42. Utada Hikaru - First Love')
-st.write('43. 東北新幹線 - Thru Traffic')
-
 # Returns the file names for example images
 file_dir = join(dirname(__file__), "test_img")
 file_names = [f for f in listdir(file_dir) if isfile(join(file_dir, f))]
@@ -182,177 +137,222 @@ if jpg:
     st.empty().image(jpg)
     st.write('File name: ' + jpg.name)
     if result[0][np.argmax(result)]*100 <= 65:
-        st.write("Prediction accuracy rate below 65%")
+        st.write("Prediction confidence rate below 65%")
         st.write('Undetectable album image.')
 
     elif np.argmax(result) == 0:
         st.write("Album name: Anri (2) - Bi・Ki・Ni")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 1:
         st.write("Album name: Anri (2) - Coool")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 2:
         st.write("Album name: Anri (2) - Timely!!")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 3:
         st.write("Album name: Anri (2) - Wave")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 4:
         st.write("Album name: Hiroshi Sato - Aqua")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 5:
         st.write("Album name: Hiroshi Sato - Awakening")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 6:
         st.write("Album name: Hiroshi Sato - Future jpg.name")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 7:
         st.write("Album name: Hiroshi Sato - Sound Of Science")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 8:
         st.write("Album name: Mariya Takeuchi - Beginning")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 9:
         st.write("Album name: Mariya Takeuchi - Love Songs")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 10:
         st.write("Album name: Mariya Takeuchi - Miss M")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 11:
         st.write("Album name: Mariya Takeuchi - Request")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 12:
         st.write("Album name: Mariya Takeuchi - Trad = トラッド")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 13:
         st.write("Album name: Mariya Takeuchi - University Street")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 14:
         st.write("Album name: Mariya Takeuchi - Variety")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 15:
         st.write("Album name: Momoko Kikuchi - Adventure")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 16:
         st.write("Album name: Momoko Kikuchi - Escape From Dimension")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 17:
         st.write("Album name: Momoko Kikuchi - Ocean Side")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 18:
         st.write("Album name: Momoko Kikuchi - Tropic Of Capricorn =トロピック・オブ・カプリコーン 南回帰線")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 19:
         st.write("Album name: Taeko Ohnuki - Aventure")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 20:
         st.write("Album name: Taeko Ohnuki - Cliché")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 21:
         st.write("Album name: Taeko Ohnuki - Grey Skies")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 22:
         st.write("Album name: Taeko Ohnuki - Mignonne")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 23:
         st.write("Album name: Taeko Ohnuki - Romantique")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 24:
         st.write("Album name: Taeko Ohnuki - Sunshower")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 25:
         st.write("Album name: Tatsuro Yamashita - Big Wave = ビッグウェイブ")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 26:
         st.write("Album name: Tatsuro Yamashita - Circus Town")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 27:
         st.write("Album name: Tatsuro Yamashita - For You")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 28:
         st.write("Album name: Tatsuro Yamashita - Go Ahead!")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 29:
         st.write("Album name: Tatsuro Yamashita - Greatest Hits! Of")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 30:
         st.write("Album name: Tatsuro Yamashita - It's A Poppin' Time")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 31:
         st.write("Album name: Tatsuro Yamashita - Melodies")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 32:
         st.write("Album name: Tatsuro Yamashita - Moonglow")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 33:
         st.write("Album name: Tatsuro Yamashita - On The Street Corner")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 34:
         st.write("Album name: Tatsuro Yamashita - On The Street Corner 2")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 35:
         st.write("Album name: Tatsuro Yamashita - Ray Of Hope")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 36:
         st.write("Album name: Tatsuro Yamashita - Ride On Time")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 37:
         st.write("Album name: Tatsuro Yamashita - Softly")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 38:
         st.write("Album name: Tatsuro Yamashita - Spacy")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 39:
         st.write("Album name: Utada Hikaru - Badモード")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 40:
         st.write("Album name: Utada Hikaru - Deep River")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 41:
         st.write("Album name: Utada Hikaru - First Love")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
 
     elif np.argmax(result) == 42:
         st.write("Album name: 東北新幹線 - Thru Traffic")
-        st.write("Accuracy: " + str(model_result) + "%")
+        st.write("Confidence: " + str(model_result) + "%")
+
+st.subheader('The list of predictable album cover')
+st.write('1. Anri (2) - Bi・Ki・Ni')
+st.write('2. Anri (2) - Coool')
+st.write('3. Anri (2) - Timely!!')
+st.write('4. Anri (2) - Wave')
+st.write('5. Hiroshi Sato - Aqua')
+st.write('6. Hiroshi Sato - Awakening')
+st.write('7. Hiroshi Sato - Future File')
+st.write('8. Hiroshi Sato - Sound Of Science')
+st.write('9. Mariya Takeuchi - Beginning')
+st.write('10. Mariya Takeuchi - Love Songs')
+st.write('11. Mariya Takeuchi - Miss M')
+st.write('12. Mariya Takeuchi - Request')
+st.write('13. Mariya Takeuchi - Trad = トラッド')
+st.write('14. Mariya Takeuchi - University Street')
+st.write('15. Mariya Takeuchi - Variety')
+st.write('16. Momoko Kikuchi - Adventure')
+st.write('17. Momoko Kikuchi - Escape From Dimension')
+st.write('18. Momoko Kikuchi - Ocean Side')
+st.write('19. Momoko Kikuchi - Tropic Of Capricorn =トロピック・オブ・カプリコーン 南回帰線')
+st.write('20. Taeko Ohnuki - Aventure')
+st.write('21. Taeko Ohnuki - Cliché')
+st.write('22. Taeko Ohnuki - Grey Skies')
+st.write('23. Taeko Ohnuki - Mignonne')
+st.write('24. Taeko Ohnuki - Romantique')
+st.write('25. Taeko Ohnuki - Sunshower')
+st.write('26. Tatsuro Yamashita - Big Wave = ビッグウェイブ')
+st.write('27. Tatsuro Yamashita - Circus Town')
+st.write('28. Tatsuro Yamashita - For You')
+st.write('29. Tatsuro Yamashita - Go Ahead!')
+st.write('30. Tatsuro Yamashita - Greatest Hits! Of')
+st.write("31. Tatsuro Yamashita - It's A Poppin' Time")
+st.write('32. Tatsuro Yamashita - Melodies')
+st.write('33. Tatsuro Yamashita - Moonglow')
+st.write('34. Tatsuro Yamashita - On The Street Corner')
+st.write('35. Tatsuro Yamashita - On The Street Corner 2')
+st.write('36. Tatsuro Yamashita - Ray Of Hope')
+st.write('37. Tatsuro Yamashita - Ride On Time')
+st.write('38. Tatsuro Yamashita - Softly')
+st.write('39. Tatsuro Yamashita - Spacy')
+st.write('40. Utada Hikaru - Badモード')
+st.write('41. Utada Hikaru - Deep River')
+st.write('42. Utada Hikaru - First Love')
+st.write('43. 東北新幹線 - Thru Traffic')
