@@ -19,7 +19,7 @@ STREAMLIT_STATIC_PATH = (
 st.title("CNN to classify album image")
 st.subheader(
     "Deep learning model that classifies album covers\
-    on onine marketplaces with more than 65% accuracy."
+    on onine marketplaces with more than 65% confidence."
 )
 st.write(
     "The objective was to create a tool that could quickly and accurately classify album covers.\
@@ -168,7 +168,7 @@ def process_predict(result):
     return predictions
 
 # Allows users to upload and image
-st.header("Please try upload an image by draging one of the image above or upload your image directly via below panel")
+st.header("Please try upload an image by drag and drop one of the image above or upload your image directly via the panel below")
 jpg = st.file_uploader("Upload an album cover image")
 
 # The model makes predictions and displays them
