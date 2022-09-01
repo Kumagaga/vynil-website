@@ -43,9 +43,9 @@ for img in file_names:
     img_list.append(to_image)
 
 # Displays and captions example images
-st.subheader("Representative images of 12 album covers")
+st.subheader("Representative images of 6 album covers")
 st.write(
-    "This current model only works with a set of albums we've curated.\
+    "The current model has only been trained on a set of albums we've curated.\
     Note that images below are from Mercari and were not used to train the model."
 )
 
@@ -123,14 +123,14 @@ def process_predict(result):
     return predictions
 
 # Allows users to upload and image
-st.header("Please try upload an image by drag and drop one of the image above or upload your image directly via the panel below")
-jpg = st.file_uploader("Upload an album cover image")
+st.header("Please try by uploading dragging and dropping one of the images above or uploading your own image directly (.jpeg).")
+jpg = st.file_uploader("Upload an album cover image", type=['jpg','jpeg'])
 
 # The model makes predictions and displays them
 if jpg:
     img = load_img(jpg)
     images = np.vstack([img])
-    result = predict(images)
+    result = predict(img)
     predictions = process_predict(result)
     model_result = round(result[0][np.argmax(result)]*100, 2)
     st.header("Your Results")
@@ -313,7 +313,7 @@ if jpg:
         st.write("Confidence: " + str(model_result) + "%")
 
 st.write('-----------------------------------------------')
-st.subheader('The list of predictable album cover')
+st.subheader('The list of predictable album covers')
 st.write('1. Anri (2) - Bi・Ki・Ni')
 st.write('2. Anri (2) - Coool')
 st.write('3. Anri (2) - Timely!!')
