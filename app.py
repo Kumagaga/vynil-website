@@ -312,6 +312,7 @@ if jpg:
         st.write("Album name: 東北新幹線 - Thru Traffic")
         st.write("Confidence: " + str(model_result) + "%")
 
+st.write('-----------------------------------------------')
 st.subheader('The list of predictable album cover')
 st.write('1. Anri (2) - Bi・Ki・Ni')
 st.write('2. Anri (2) - Coool')
